@@ -1,21 +1,26 @@
 {
-    "name": "wxapp-auto",
-    "displayName": "wxapp-auto",
-    "description": "WeApp Snippets",
-    "version": "0.0.1",
+	"name": "wxapp-auto",
+	"displayName": "wxapp-auto",
+	"description": "WeApp Snippets",
+	"version": "0.0.1",
 	"publisher": "jhs1873",
-	"keywords":["小程序","wx","wxapp","微信小程序"],
+	"keywords": [
+		"小程序",
+		"wx",
+		"wxapp",
+		"微信小程序"
+	],
 	"icon": "wxapp.png",
-    "engines": {
-        "vscode": "^1.18.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Snippets"
+	],
 	"contributes": {
 		"snippets": [
 			{
-				"language": "wxml",
+				"language": "html",
 				"path": "./snippets/wxml.json"
 			},
 			{
@@ -26,16 +31,43 @@
 				"language": "json",
 				"path": "./snippets/json.json"
 			}
+		],
+		"languages": [
+			{
+				"id": "html",
+				"aliases": [
+					"html",
+					"wxml"
+				],
+				"extensions": [
+					".wxml"
+				]
+			},
+			{
+				"id": "css",
+				"aliases": [
+					"css",
+					"wxss"
+				],
+				"extensions": [
+					".wxss"
+				]
+			}
 		]
 	},
 	"license": "MIT",
 	"repository": {
-        "type": "git",
-        "url": "https://github.com/jhs1873/wxapp-auto"
+		"type": "git",
+		"url": "https://github.com/jhs1873/wxapp-auto"
 	},
 	"homepage": "https://github.com/jhs1873/wxapp-auto",
 	"bugs": {
-        "url": "https://github.com/jhs1873/wxapp-auto/issues",
-        "email": "jhs.jie@qq.com"
-    }
+		"url": "https://github.com/jhs1873/wxapp-auto/issues",
+		"email": "jhs.jie@qq.com"
+	},
+	"__metadata": {
+		"id": "45eaaa9f-20e1-4714-9125-33bdb5aa880f",
+		"publisherDisplayName": "jhs1873",
+		"publisherId": "3cee3042-ff2c-444b-b09c-1dd8b0d9de20"
+	}
 }
