@@ -4,18 +4,12 @@
         "body": [
             "wx.request({",
             "\turl: 'https://${1:URL}',",
-            "\tdata: ${2:{}},",
+            "\tdata: {$2},",
             "\tmethod: '${3:GET}', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT",
             "\t// header: {}, // 设置请求的 header",
             "\tsuccess: function(res){",
             "\t\t${4:// success}",
             "\t},",
-            "\tfail: function() {",
-            "\t\t${5:// fail}",
-            "\t},",
-            "\tcomplete: function() {",
-            "\t\t${6:// complete}",
-            "\t}",
             "})"
         ],
         "description": "发起 https 请求。一个微信小程序，同时只能有5个网络请求连接。"
@@ -799,15 +793,6 @@
         "body": [
             "wx.navigateTo({",
             "\turl: '${1:String}',",
-            "\tsuccess: function(res){",
-            "\t\t${2:// success}",
-            "\t},",
-            "\tfail: function() {",
-            "\t\t${3:// fail}",
-            "\t},",
-            "\tcomplete: function() {",
-            "\t\t${4:// complete}",
-            "\t}",
             "})"
         ],
         "description": "保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。"
@@ -835,15 +820,6 @@
         "body": [
             "wx.navigateBack({",
             "\tdelta: ${1:1}, // 回退前 delta(默认为1) 页面",
-            "\tsuccess: function(res){",
-            "\t\t${2:// success}",
-            "\t},",
-            "\tfail: function() {",
-            "\t\t${3:// fail}",
-            "\t},",
-            "\tcomplete: function() {",
-            "\t\t${4:// complete}",
-            "\t}",
             "})"
         ],
         "description": "关闭当前页面，回退前 delta(默认为1) 页面。"
@@ -968,16 +944,12 @@
         "body": [
             "App({",
             "\tonLaunch: function () {",
-            "\t\t${1:String1}",
             "\t},",
             "\tonShow: function () {",
-            "\t\t${2:String2}",
             "\t},",
             "\tonHide: function () {",
-            "\t\t${3:String3}",
             "\t},",
             "\tonError: function (msg) {",
-            "\t\t${4:String4}",
             "\t}",
             "})"
         ],
@@ -988,35 +960,27 @@
         "body": [
             "Page({",
             "\tdata:{",
-            "\t\t${1:String1}",
             "\t},",
             "\tonLoad:function(options){",
             "\t\t// 生命周期函数--监听页面加载",
-            "\t\t${2:String2}",
             "\t},",
             "\tonReady:function(){",
             "\t\t// 生命周期函数--监听页面初次渲染完成",
-            "\t\t${3:String3}",
             "\t},",
             "\tonShow:function(){",
             "\t\t// 生命周期函数--监听页面显示",
-            "\t\t${4:String4}",
             "\t},",
             "\tonHide:function(){",
             "\t\t// 生命周期函数--监听页面隐藏",
-            "\t\t${5:String5}",
             "\t},",
             "\tonUnload:function(){",
             "\t\t// 生命周期函数--监听页面卸载",
-            "\t\t${6:String6}",
             "\t},",
             "\tonPullDownRefresh: function() {",
             "\t\t// 页面相关事件处理函数--监听用户下拉动作",
-            "\t\t${7:String7}",
             "\t},",
             "\tonReachBottom: function() {",
             "\t\t// 页面上拉触底事件的处理函数",
-            "\t\t${8:String8}",
             "\t},",
             "\tonShareAppMessage: function() {",
             "\t\t// 用户点击右上角分享",
@@ -1029,5 +993,26 @@
             "})"
         ],
         "description": "使用 Page 函数来生成一个页面实例"
+    },
+    "log": {
+        "prefix": "cl",
+        "body": [
+            "console.log($0)"
+        ],
+        "description": "console.log();"
+    },
+    "setData":{
+        "prefix":"sd",
+        "body":[
+            "setData({$1})"
+        ],
+        "description":"setData({})"
+    },
+    "getApp":{
+        "prefix":"getApp",
+        "body":[
+            "var app = getApp()"
+        ],
+        "description":"getApp"
     }
 }

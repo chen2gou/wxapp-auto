@@ -26,7 +26,15 @@
     },
     "swiper": {
         "prefix": "swiper",
-        "body": "<swiper indicator-dots=\"${0:false}\" autoplay=\"${1:false}\" vertical=\"${2:false}\" current=\"${3:0}\" interval=\"${4:5000}\" duration=\"${5:1000}\" bindchange=\"$6\">$7</swiper>",
+        "body": [
+            "<swiper indicator-dots=\"true\" autoplay=\"true\"  interval=\"3500\" duration=\"500\" >",
+            "\t<block wx:for=\"{{imgUrls}}\">",
+            "\t\t<swiper-item>",            
+            "\t\t\t<image src=\"{{item}}\" class=\"slider-image\" width=\"750rpx\" height=\"350rpx\"/>",            
+            "\t\t</swiper-item>",   
+            "\t</block>",                     
+            "</swiper>"
+        ],
         "description": "滑块视图容器"
     },
     "swiper-item": {
@@ -131,7 +139,7 @@
     },
     "image": {
         "prefix": "image",
-        "body": "<image src=\"$0\" mode=\"${1:scaleToFill|aspectFit|aspectFill|widthFix}\" binderror=\"$2\" bindload=\"$3\">$4</image>",
+        "body": "<image src=\"$0\"></image>",
         "description": "图片"
     },
     "video": {
@@ -173,5 +181,20 @@
         "prefix": "rich-text",
         "body": "<rich-text nodes=\"{{$1}}\">$2</rich-text>",
         "description": "富文本"
+    },
+    "import":{
+        "prefix":"import",
+        "body":"<import src=\"$1\"/>",
+        "description":"<import src=\"\"/>"
+    },
+    "template":{
+        "prefix":"template",
+        "body":"<template is=\"$1\" data=\"$2\"></template>",
+        "description":"<import src=\"\"/>"
+    },
+    "bindtap":{
+        "prefix":"bindtap",
+        "body":"bindtap=\"$1\"",
+        "description":"bindtap=\"\""
     }
 }

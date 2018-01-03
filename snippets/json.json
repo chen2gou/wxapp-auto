@@ -8,7 +8,7 @@
             "\t\"navigationBarTitleText\": \"\",",
             "\t\"backgroundColor\": \"#ffffff\",",
             "\t\"backgroundTextStyle\": \"dark|light\",",
-            "\t\"enablePullDownRefresh\": false",
+            "\t\"enablePullDownRefresh\": false,",
             "\t\"disableScroll\": false",
             "}"
         ]
@@ -62,5 +62,9 @@
         "body": [
             "\"debug\":false,"
         ]
+    },
+    "navigationBarTitleText":{
+        "prefix":"navigationBarTitleText",
+        "body":"\"navigationBarTitleText\":\"$1\""
     }
 }

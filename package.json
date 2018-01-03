@@ -2,7 +2,7 @@
 	"name": "wxapp-auto",
 	"displayName": "wxapp-auto",
 	"description": "WeApp Snippets",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"publisher": "jhs1873",
 	"keywords": [
 		"小程序",
@@ -30,28 +30,14 @@
 			{
 				"language": "json",
 				"path": "./snippets/json.json"
-			}
-		],
-		"languages": [
-			{
-				"id": "html",
-				"aliases": [
-					"html",
-					"wxml"
-				],
-				"extensions": [
-					".wxml"
-				]
 			},
 			{
-				"id": "css",
-				"aliases": [
-					"css",
-					"wxss"
-				],
-				"extensions": [
-					".wxss"
-				]
+				"language": "vue",
+				"path": "./snippets/wxml.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/json.json"
 			}
 		]
 	},
