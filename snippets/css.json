@@ -1,0 +1,7 @@
+{
+    "wxParse": {
+        "prefix": "wxParse",
+        "body": "@import \"../../wxParse/wxParse.wxss\";",
+        "description": "wxParse"
+    }
+}

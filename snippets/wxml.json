@@ -196,5 +196,15 @@
         "prefix":"bindtap",
         "body":"bindtap=\"$1\"",
         "description":"bindtap=\"\""
+    },
+    "wxParse":{
+        "prefix":"wxParse",
+        "body":"<import src=\"../../wxParse/wxParse.wxml\"/>",
+        "description":"wxParse"
+    },
+    "wxParse-template":{
+        "prefix":"wxParseTemplate",
+        "body":"<template is=\"wxParse\" data=\"{{wxParseData:article.nodes}}\"/>",
+        "description":"wxParse-template"
     }
 }

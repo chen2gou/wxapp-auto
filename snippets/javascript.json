@@ -1014,5 +1014,19 @@
             "var app = getApp()"
         ],
         "description":"getApp"
+    },
+    "wxParse":{
+        "prefix":"wxParse",
+        "body":[
+            "var WxParse = require('../../wxParse/wxParse.js')"
+        ],
+        "description":"wxParse"
+    },
+    "wxParse.wxParse":{
+        "prefix":"wxParse.wxParse",
+        "body":[
+            "WxParse.wxParse('article', 'html', article, that, 5)"
+        ],
+        "description":"wxParse.wxParse"
     }
 }
