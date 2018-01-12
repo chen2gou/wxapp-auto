@@ -2,13 +2,14 @@
 	"name": "wxapp-auto",
 	"displayName": "wxapp-auto",
 	"description": "WeApp Snippets",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "jhs1873",
 	"keywords": [
 		"小程序",
 		"wx",
 		"wxapp",
-		"微信小程序"
+		"微信小程序",
+		"wepy-wx"
 	],
 	"icon": "wxapp.png",
 	"engines": {
@@ -18,6 +19,26 @@
 		"Snippets"
 	],
 	"contributes": {
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": [
+					"Vue",
+					"vue"
+				],
+				"extensions": [
+					".vue"
+				],
+				"configuration": "./syntaxes/vue.config.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "vue",
+				"scopeName": "text.html.vue",
+				"path": "./syntaxes/vue.template"
+			}
+		],
 		"snippets": [
 			{
 				"language": "html",
@@ -34,6 +55,10 @@
 			{
 				"language": "css",
 				"path": "./snippets/css.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/wxml.json"
 			}
 		]
 	},

@@ -6,3 +6,6 @@
     "*.wxss": "css",
 },
 ```
+
+支持wepy snippets:
+    按照官网说明下载好vetur扩展

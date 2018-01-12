@@ -197,6 +197,11 @@
         "body":"bindtap=\"$1\"",
         "description":"bindtap=\"\""
     },
+    "bindblur":{
+        "prefix":"bindblur",
+        "body":"bindblur=\"$1\"",
+        "description":"bindblur=\"\""
+    },
     "wxParse":{
         "prefix":"wxParse",
         "body":"<import src=\"../../wxParse/wxParse.wxml\"/>",
