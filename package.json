@@ -2,14 +2,15 @@
 	"name": "wxapp-auto",
 	"displayName": "wxapp-auto",
 	"description": "WeApp Snippets",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"publisher": "jhs1873",
 	"keywords": [
 		"小程序",
 		"wx",
 		"wxapp",
 		"微信小程序",
-		"wepy-wx"
+		"wepy-wx",
+		"wepy-wxapp"
 	],
 	"icon": "wxapp.png",
 	"engines": {
@@ -29,14 +30,14 @@
 				"extensions": [
 					".vue"
 				],
-				"configuration": "./syntaxes/vue.config.json"
+				"configuration": "./syntaxes/vue.configuration.json"
 			}
 		],
 		"grammars": [
 			{
 				"language": "vue",
 				"scopeName": "text.html.vue",
-				"path": "./syntaxes/vue.template"
+				"path": "./syntaxes/vue.tmLanguage"
 			}
 		],
 		"snippets": [
@@ -57,8 +58,12 @@
 				"path": "./snippets/css.json"
 			},
 			{
+				"language": "vue-html",
+				"path": "./snippets/vTm.json"
+			},
+			{
 				"language": "vue",
-				"path": "./snippets/wxml.json"
+				"path": "./snippets/vTm.json"
 			}
 		]
 	},
@@ -74,7 +79,7 @@
 	},
 	"__metadata": {
 		"id": "45eaaa9f-20e1-4714-9125-33bdb5aa880f",
-		"publisherDisplayName": "jhs1873",
-		"publisherId": "3cee3042-ff2c-444b-b09c-1dd8b0d9de20"
+		"publisherId": "3cee3042-ff2c-444b-b09c-1dd8b0d9de20",
+		"publisherDisplayName": "jhs1873"
 	}
 }
